@@ -152,7 +152,7 @@ public class MessageDAO {
 
             int rowsUpdated = ps.executeUpdate();
             if(rowsUpdated > 0) {
-                return getMessageById(id);
+                return getMessageById(id);  //on commit two
             } else {
                 return null;
             }
